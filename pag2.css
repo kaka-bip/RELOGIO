@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://example.com/medieval-background.jpg'); /* Substitua pelo link da imagem de fundo */
+    background-size: cover;
+    font-family: 'Garamond', serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.clock-container {
+    text-align: center;
+    border: 5px solid #d4af37; /* Cor dourada */
+    border-radius: 15px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+}
+
+.clock-container:hover {
+    transform: scale(1.05);
+}
+
+.clock {
+    font-size: 72px;
+    font-weight: bold;
+    color: #d4af37; /* Cor dourada */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+.clock {
+    font-family: 'Cinzel', serif; /* Fonte estilizada */
+}
+
+@media (max-width: 600px) {
+    .clock {
+        font-size: 48px; /* Tamanho menor em telas pequenas */
+    }
+}
